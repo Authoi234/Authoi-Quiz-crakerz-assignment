@@ -1,6 +1,7 @@
 import './App.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Main from './layout/Main/Main';
+import Home from './components/Home/Home';
 
 function App() {
   const router = createBrowserRouter([
@@ -10,7 +11,8 @@ function App() {
       children: [
         {
           path: '/',
-          
+          element: <Home></Home>,
+          loader: () => fetch('')
         }
       ]
     }

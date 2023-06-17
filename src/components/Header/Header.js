@@ -11,8 +11,9 @@ const Header = () => {
                     <h1 className='ps-3'>Authoi Quiz</h1>
                 </div>
                 <div className='flex'>
+                    <a href='/#quizs' className='text-white'><li className='text-2xl list-none pe-4'>Quizzes</li></a>
                     <Link go='/' className='text-white'><li className='text-2xl list-none pe-4'>Home</li></Link>
-                    <Link go='/static' className='text-white'><li className='text-2xl list-none pe-4'>Static</li></Link>
+                    <Link go='/static' className='text-white'><li className='text-2xl list-none pe-4'>Statistics</li></Link>
                     <Link go='/blogs' className='text-white'><li className='text-2xl list-none pe-4'>Blog</li></Link>
                 </div>
             </div>

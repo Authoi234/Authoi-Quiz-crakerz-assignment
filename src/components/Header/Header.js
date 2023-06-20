@@ -13,8 +13,8 @@ const Header = () => {
                 <div className='flex'>
                     <a href='/#quizs' className='text-white'><li className='text-2xl list-none pe-4'>Quizzes</li></a>
                     <Link go='/' className='text-white'><li className='text-2xl list-none pe-4'>Home</li></Link>
-                    <Link go='/static' className='text-white'><li className='text-2xl list-none pe-4'>Statistics</li></Link>
-                    <Link go='/blogs' className='text-white'><li className='text-2xl list-none pe-4'>Blog</li></Link>
+                    <a href='statistics' className='text-white'><li className='text-2xl list-none pe-4'>Statistics</li></a>
+                    <Link go='blogs' className='text-white'><li className='text-2xl list-none pe-4'>Blog</li></Link>
                 </div>
             </div>
         </nav>

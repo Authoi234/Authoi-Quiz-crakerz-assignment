@@ -8,7 +8,7 @@ const SingleQuiz = () => {
     return (
         <div className=''>
             <div className='flex justify-center items-center'>
-                <img className='w-48' src={quizData.data.logo} alt="" />
+                <img className='lg:w-48 md:w-24 sm:w-12' src={quizData.data.logo} alt="" />
             </div>
             <div><h1 className="text-4xl">{quizData.data.name}</h1>
                 <h4 className="text-3xl">total quiz: {quizData.data.total}</h4>

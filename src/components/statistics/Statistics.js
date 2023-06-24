@@ -6,7 +6,7 @@ const Statistics = () => {
     const data = useLoaderData()
     const data2 = data.data;
     return (
-        <div>
+        <div className='overflow-hidden'>
             <p className='mt-20 flex justify-center items-center'>
                 <LineChart
                     width={800}
@@ -33,7 +33,7 @@ const Statistics = () => {
                     <Line dataKey={'id'} stroke='red'></Line>
                 </LineChart>
             </p>
-            <p className='mt-20 flex justify-center items-center'>
+            <p className='mt-20 lg:flex md:block justify-center items-center'>
                 <AreaChart
                     width={600}
                     height={400}
@@ -77,7 +77,7 @@ const Statistics = () => {
                     <Bar dataKey="id" stackId="a" fill="#82ca9d" />
                 </BarChart>
             </p>
-            <p className='mt-20 flex justify-center items-center'>
+            <p className='mt-20 lg:flex md:block justify-center items-center'>
                 <ComposedChart
                     width={600}
                     height={400}
@@ -111,7 +111,7 @@ const Statistics = () => {
                         outerRadius={80}
                         fill="#8884d8"
                         label></Pie>
-                        <Tooltip></Tooltip>
+                    <Tooltip></Tooltip>
                 </PieChart>
 
             </p>

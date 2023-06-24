@@ -11,11 +11,11 @@ const Home = () => {
             <header>
                 <HeaderSection></HeaderSection>
             </header>
-           <div className='grid grid-cols-2' id='quizs'>
-           {
-                data.data.map(singleInfo => <SingleInfo key={singleInfo.id} info={singleInfo}></SingleInfo>)
-            }
-           </div>
+            <div className='grid md:grid-cols-2 sm:grid-cols-1' id='quizs'>
+                    {
+                        data.data.map(singleInfo => <SingleInfo key={singleInfo.id} info={singleInfo}></SingleInfo>)
+                    }
+            </div>
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -11,10 +11,9 @@ const Header = () => {
                     <h1 className='ps-3'>Authoi Quiz</h1>
                 </div>
                 <div className='flex'>
-                    <Link to='/#quizs' className='text-white'><li className='text-2xl list-none pe-4'>Quizzes</li></Link>
-                    <Link to='/' className='text-white'><li className='text-2xl list-none pe-4'>Home</li></Link>
-                    <Link to='statistics' className='text-white'><li className='text-2xl list-none pe-4'>Statistics</li></Link>
-                    <Link to='blogs' className='text-white'><li className='text-2xl list-none pe-4'>Blog</li></Link>
+                    <NavLink to='/' className={({ isActive}) => isActive ? "text-zinc-200 scale-110 decoration-transparent" : "text-white decoration-transparent"}><li className='text-2xl list-none pe-4'>Home</li></NavLink>
+                    <NavLink to='statistics' className={({ isActive}) => isActive ? "text-zinc-200 scale-110 decoration-transparent" : "text-white decoration-transparent"}><li className='text-2xl list-none pe-4'>Statistics</li></NavLink>
+                    <NavLink to='blogs' className={({ isActive}) => isActive ? "text-zinc-200 scale-110 decoration-transparent" : "text-white decoration-transparent"}><li className='text-2xl list-none pe-4'>Blog</li></NavLink>
                 </div>
             </div>
         </nav>

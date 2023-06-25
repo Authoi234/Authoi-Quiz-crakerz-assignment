@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## There are answers of some questions in this site
 ## This is very comfortable quiz app
 
-# The Live Site Link Is : (https://nimble-pastelito-d15ebe.netlify.app/)
+# The Live Site Link Is : (https://authoi-quiz-assignment.netlify.app/)
 
 ## Available Scripts
 
